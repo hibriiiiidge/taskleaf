@@ -17,6 +17,7 @@ jobs:
       - image: circleci/postgres:10
         environment:
           POSTGRES_DB: taskleaf_test
+          POSTGRES_USER: postgres
 
     working_directory: ~/repo
 
