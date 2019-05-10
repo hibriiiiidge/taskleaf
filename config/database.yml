@@ -20,7 +20,6 @@ development:
 test:
   <<: *default
   database: taskleaf_test
-  host: localhost
 
 production:
   <<: *default
