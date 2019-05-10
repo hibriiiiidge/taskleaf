@@ -11,8 +11,8 @@ jobs:
       - image: circleci/ruby:2.6.2-node-browsers
         environment:
           RAILS_ENV: test
-          PGHOST: 127.0.0.1
-          PGUSER: postgres
+          # PGHOST: 127.0.0.1
+          # PGUSER: postgres
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
