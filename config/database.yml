@@ -20,6 +20,11 @@ development:
 test:
   <<: *default
   database: taskleaf_test
+  <% if ENV.fetch("CIRCLECI", false) %>
+  user: postgres
+  host: localhost
+  <% end %>
+
 
 production:
   <<: *default
