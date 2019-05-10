@@ -1,0 +1,16 @@
+h1 タスク一覧画面
+
+table
+  thead
+    tr
+      th name
+      th description
+  tbody
+    - @tasks.each do |task|
+      tr
+        td= link_to task.name, task
+        td= simple_format(task.description)
+        td= link_to "編集", edit_task_path(task)
+        td= link_to "削除", task_path(task), method: :delete, data: { confirm: "「#{task.name}」を削除してもよろしいですか？" }
+
+= link_to "新しいタスクを登録する", new_task_path
