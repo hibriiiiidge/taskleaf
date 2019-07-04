@@ -7,7 +7,7 @@ describe 'タスク一覧' do
     visit root_path
   end
 
-  it do
+  it 'タスク一覧画面が表示される' do
     expect(page).to have_content('タスク一覧画面')
   end
 end
