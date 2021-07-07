@@ -1,0 +1,12 @@
+h1 タスク一覧画面
+
+table
+  thead
+    tr
+      th name
+      th email
+  tbody
+    - @users.each do |user|
+      tr
+        td= user.name
+        td= user.email

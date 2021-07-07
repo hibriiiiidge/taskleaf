@@ -14,3 +14,4 @@ table
         td= link_to "削除", task_path(task), method: :delete, data: { confirm: "「#{task.name}」を削除してもよろしいですか？" }
 
 = link_to "新しいタスクを登録する", new_task_path
+= link_to "ユーザー一覧", users_path
